@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Golden Star Foil Balloon",
+        "category": "foil",
+        "price": 5.99,
+        "image": "/images/prod-foil-star.jpg",
+        "description": "A shiny golden star balloon, perfect for any celebration."
+    },
+    {
+        "id": 2,
+        "name": "Class of 2024 Graduation Bundle",
+        "category": "graduation",
+        "price": 24.99,
+        "image": "/images/prod-grad-bundle.jpg",
+        "description": "Celebrate the big day with this gold and black balloon bundle."
+    },
+    {
+        "id": 3,
+        "name": "First Communion Cross Balloon",
+        "category": "religious",
+        "price": 8.50,
+        "image": "/images/prod-communion.jpg",
+        "description": "Beautiful white balloon with a silver cross."
+    },
+    {
+        "id": 4,
+        "name": "Spooky Pumpkin Balloon",
+        "category": "halloween",
+        "price": 12.00,
+        "image": "/images/prod-halloween.jpg",
+        "description": "Get ready for trick or treaters with this giant pumpkin balloon."
+    },
+    {
+        "id": 5,
+        "name": "50th Golden Anniversary Arch",
+        "category": "anniversary",
+        "price": 150.00,
+        "image": "/images/prod-anniv-arch.jpg",
+        "description": "A stunning grand entrance for a golden anniversary party."
+    },
+    {
+        "id": 6,
+        "name": "Rainbow Balloon Arch",
+        "category": "arches",
+        "price": 120.00,
+        "image": "/images/prod-rainbow-arch.jpg",
+        "description": "Brighten up the room with a full rainbow arch."
+    },
+    {
+        "id": 7,
+        "name": "Elegant Black Tie Bouquet",
+        "category": "formal",
+        "price": 45.00,
+        "image": "/images/prod-formal.jpg",
+        "description": "Sophisticated black and gold balloons for formal events."
+    },
+    {
+        "id": 8,
+        "name": "Baby Blue Christening Set",
+        "category": "christening",
+        "price": 30.00,
+        "image": "/images/prod-christening.jpg",
+        "description": "Gentle blue balloons for a special christening day."
+    },
+    {
+        "id": 9,
+        "name": "She Said Yes Ring Balloon",
+        "category": "engagement",
+        "price": 15.00,
+        "image": "/images/prod-engagement.jpg",
+        "description": "Giant diamond ring balloon to celebrate the engagement."
+    }
+]
