@@ -52,26 +52,43 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Instagram Mockup */}
+            {/* Instagram Feed */}
             <section style={{ padding: '4rem 0' }}>
                 <div className="container">
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '2rem' }}>
                         <Instagram size={32} color="var(--primary)" />
-                        <h2 style={{ fontSize: '2rem' }}>Latest from Instagram</h2>
+                        <h2 style={{ fontSize: '2rem' }}>Follow us <a href="https://www.instagram.com/goodtimesgiftshop/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none' }}>@goodtimesgiftshop</a></h2>
                     </div>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
-                        {[1, 2, 3, 4].map((item) => (
-                            <div key={item} style={{ aspectRatio: '1', background: '#eee', borderRadius: 'var(--radius-md)', overflow: 'hidden', position: 'relative', cursor: 'pointer' }}>
+                        {[
+                            { img: '/images/instagram/insta-christmas.jpg', alt: 'Christmas Balloons' },
+                            { img: '/images/instagram/insta-halloween.jpg', alt: 'Halloween Display' },
+                            { img: '/images/instagram/insta-60th.jpg', alt: '60th Birthday Arch' },
+                            { img: '/images/instagram/insta-decor.jpg', alt: 'Event Decor' }
+                        ].map((item, index) => (
+                            <a
+                                key={index}
+                                href="https://www.instagram.com/goodtimesgiftshop/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ aspectRatio: '1', background: '#eee', borderRadius: 'var(--radius-md)', overflow: 'hidden', position: 'relative', cursor: 'pointer', display: 'block' }}
+                            >
                                 <img
-                                    src={`https://placehold.co/400x400/ff00ff/ffffff?text=Post+${item}`}
-                                    alt="Insta Post"
+                                    src={item.img}
+                                    alt={item.alt}
                                     style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.3s' }}
                                     onMouseOver={e => e.target.style.transform = 'scale(1.1)'}
                                     onMouseOut={e => e.target.style.transform = 'scale(1)'}
                                 />
-                            </div>
+                            </a>
                         ))}
+                    </div>
+
+                    <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+                        <a href="https://www.instagram.com/goodtimesgiftshop/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                            See More on Instagram <ArrowRight size={18} />
+                        </a>
                     </div>
                 </div>
             </section>
