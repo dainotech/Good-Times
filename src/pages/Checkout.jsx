@@ -44,7 +44,7 @@ export default function Checkout() {
                     <h2 style={{ marginBottom: '1.5rem' }}>Your Trolley</h2>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                         {cart.map((item, index) => (
-                            <div key={`${item.id}-${index}`} style={{ display: 'flex', gap: '1rem', background: 'white', padding: '1rem', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)' }}>
+                            <div key={`${item.id}-${index}`} style={{ display: 'flex', gap: '1rem', background: 'var(--card-bg)', padding: '1rem', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)' }}>
                                 <div style={{ width: '80px', height: '80px', borderRadius: 'var(--radius-sm)', overflow: 'hidden', flexShrink: 0 }}>
                                     <img src={item.image} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 </div>
@@ -67,7 +67,7 @@ export default function Checkout() {
 
                 {/* Checkout Details */}
                 <div>
-                    <div style={{ background: 'white', padding: '2rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}>
+                    <div style={{ background: 'var(--card-bg)', padding: '2rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}>
                         <h2 style={{ marginBottom: '1.5rem' }}>Collection Details</h2>
 
                         <div style={{ marginBottom: '2rem' }}>
@@ -131,7 +131,7 @@ export default function Checkout() {
           transition: all 0.2s;
         }
         .payment-btn:hover {
-          background: white;
+          background: var(--card-bg);
           border-color: var(--primary);
           box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }

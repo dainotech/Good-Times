@@ -2,14 +2,14 @@ import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer style={{ background: 'white', borderTop: '4px solid var(--secondary)', padding: '4rem 0 2rem', marginTop: 'auto' }}>
+        <footer style={{ background: 'var(--text-color)', color: '#FDF5E6', padding: '4rem 0 2rem', marginTop: 'auto' }}>
             <div className="container">
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem' }}>
 
                     {/* Brand & Tagline */}
                     <div>
                         <h3 style={{ color: 'var(--primary)', marginBottom: '1rem', fontSize: '1.5rem' }}>Good Times</h3>
-                        <p className="text-muted">
+                        <p style={{ opacity: 0.8 }}>
                             Belfast’s One stop shop for Party Balloons.<br />
                             From Balloons to Partyware, Good Times make Belfast parties come alive!
                         </p>
@@ -17,7 +17,7 @@ export default function Footer() {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 style={{ marginBottom: '1rem' }}>Contact Us</h4>
+                        <h4 style={{ marginBottom: '1rem', color: '#fff' }}>Contact Us</h4>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                                 <Phone size={18} color="var(--primary)" />
@@ -25,7 +25,7 @@ export default function Footer() {
                             </div>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                                 <Mail size={18} color="var(--primary)" />
-                                <a href="mailto:brenda4gifts@gmail.com">brenda4gifts@gmail.com</a>
+                                <a href="mailto:brenda4gifts@gmail.com" style={{ color: 'inherit' }}>brenda4gifts@gmail.com</a>
                             </div>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'start' }}>
                                 <MapPin size={18} color="var(--primary)" style={{ marginTop: '3px' }} />
@@ -40,11 +40,11 @@ export default function Footer() {
 
                     {/* Quick Links / Hours */}
                     <div>
-                        <h4 style={{ marginBottom: '1rem' }}>Opening Hours & Socials</h4>
+                        <h4 style={{ marginBottom: '1rem', color: '#fff' }}>Opening Hours & Socials</h4>
                         <p>Mon - Sat: 9am - 5pm</p>
                         <p>Sun: Closed</p>
 
-                        <a href="#" className="btn btn-secondary" style={{ marginTop: '1rem', borderRadius: '8px' }}>
+                        <a href="#" className="btn btn-secondary" style={{ marginTop: '1rem', borderRadius: 'var(--radius-md)' }}>
                             <Instagram size={20} />
                             <span>Follow on Instagram</span>
                         </a>
@@ -52,7 +52,7 @@ export default function Footer() {
 
                 </div>
 
-                <div style={{ textAlign: 'center', marginTop: '3rem', paddingTop: '1rem', borderTop: '1px solid #eee', color: 'var(--text-light)', fontSize: '0.9rem' }}>
+                <div style={{ textAlign: 'center', marginTop: '3rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)', opacity: 0.6, fontSize: '0.9rem' }}>
                     &copy; {new Date().getFullYear()} Good Times Shop. All rights reserved.
                 </div>
             </div>

@@ -76,7 +76,7 @@ export default function Shop() {
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 className="product-card"
-                                style={{ background: 'white', borderRadius: 'var(--radius-md)', padding: '1rem', boxShadow: 'var(--shadow-sm)', display: 'flex', flexDirection: 'column' }}
+                                style={{ background: 'var(--card-bg)', borderRadius: 'var(--radius-md)', padding: '1rem', boxShadow: 'var(--shadow-sm)', display: 'flex', flexDirection: 'column' }}
                             >
                                 <div style={{ position: 'relative', aspectRatio: '1', marginBottom: '1rem', overflow: 'hidden', borderRadius: 'var(--radius-sm)' }}>
                                     <img

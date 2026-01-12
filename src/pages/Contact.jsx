@@ -22,7 +22,7 @@ export default function Contact() {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', fontSize: '1.1rem' }}>
 
                             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                                <div style={{ background: 'white', padding: '1rem', borderRadius: '50%', boxShadow: 'var(--shadow-sm)' }}>
+                                <div style={{ background: 'var(--card-bg)', padding: '1rem', borderRadius: '50%', boxShadow: 'var(--shadow-sm)' }}>
                                     <Phone size={24} color="var(--primary)" />
                                 </div>
                                 <div>
@@ -32,7 +32,7 @@ export default function Contact() {
                             </div>
 
                             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                                <div style={{ background: 'white', padding: '1rem', borderRadius: '50%', boxShadow: 'var(--shadow-sm)' }}>
+                                <div style={{ background: 'var(--card-bg)', padding: '1rem', borderRadius: '50%', boxShadow: 'var(--shadow-sm)' }}>
                                     <Mail size={24} color="var(--primary)" />
                                 </div>
                                 <div>
@@ -42,7 +42,7 @@ export default function Contact() {
                             </div>
 
                             <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                                <div style={{ background: 'white', padding: '1rem', borderRadius: '50%', boxShadow: 'var(--shadow-sm)' }}>
+                                <div style={{ background: 'var(--card-bg)', padding: '1rem', borderRadius: '50%', boxShadow: 'var(--shadow-sm)' }}>
                                     <MapPin size={24} color="var(--primary)" />
                                 </div>
                                 <div>
@@ -59,7 +59,7 @@ export default function Contact() {
                     </div>
 
                     {/* Enquiry Form */}
-                    <div className="contact-form" style={{ background: 'white', padding: '2rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }}>
+                    <div className="contact-form" style={{ background: 'var(--card-bg)', padding: '2rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }}>
                         {submitted ? (
                             <div style={{ textAlign: 'center', padding: '2rem 0' }}>
                                 <h3 style={{ color: 'var(--primary)', marginBottom: '1rem' }}>Message Sent!</h3>

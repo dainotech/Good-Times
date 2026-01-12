@@ -9,12 +9,12 @@ export default function Navbar() {
     const { cartCount } = useCart();
 
     return (
-        <nav className="navbar" style={{ background: 'var(--card-bg)', boxShadow: 'var(--shadow-sm)', position: 'sticky', top: 0, zIndex: 50 }}>
+        <nav className="navbar" style={{ background: 'var(--bg-color)', borderBottom: '1px solid rgba(45,27,51,0.1)', position: 'sticky', top: 0, zIndex: 50 }}>
             {/* ...styles can be moved to CSS, but inline for quick iteration/specific overrides */}
             <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '80px' }}>
 
                 {/* Logo */}
-                <NavLink to="/" className="logo play-font" style={{ fontSize: '1.8rem', color: 'var(--primary)', fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
+                <NavLink to="/" className="logo play-font">
                     Good Times 🎈
                 </NavLink>
 

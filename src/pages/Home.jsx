@@ -13,7 +13,7 @@ export default function Home() {
                 display: 'flex',
                 alignItems: 'center',
                 overflow: 'hidden',
-                background: 'radial-gradient(circle at 70% 30%, #fff0f5 0%, #fff 70%)'
+                background: 'var(--bg-color)' // Clean cream background
             }}>
                 <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'center', width: '100%', zIndex: 2 }}>
                     <motion.div

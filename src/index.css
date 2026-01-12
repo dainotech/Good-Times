@@ -1,40 +1,46 @@
 :root {
-  /* Colors */
-  --primary: #ff00ff; /* Hot Pink */
-  --primary-gradient: linear-gradient(135deg, #ff00ff 0%, #bd00ff 100%);
-  --secondary: #00e5ff; /* Bright Cyan */
-  --accent: #ffae00; /* Fun Orange */
-  
-  --bg-color: #fff9fc; /* Very light pinkish cream */
+  /* Colors - Sunwashed Celebration */
+  --primary: #E689C8;
+  /* Vibrant Pink for CTA */
+  --secondary: #A6E3E9;
+  /* Soft Mint for accents */
+  --accent: #E689C8;
+  /* Keeping consistent with primary/brand pink */
+
+  --bg-color: #FDF5E6;
+  /* Warm Cream/Champagne */
   --card-bg: #ffffff;
-  --text-color: #2d3748;
-  --text-light: #718096;
-  
+  --text-color: #2D1B33;
+  /* Deep Plum */
+  --text-light: #5a4b60;
+  /* Lighter plum/grey mix */
+
   /* Typography */
-  --font-heading: 'Fredoka', 'Quicksand', sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-  
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Lato', sans-serif;
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
-  
+
   /* BorderRadius */
   --radius-sm: 8px;
-  --radius-md: 16px;
+  --radius-md: 12px;
+  /* Soft rounded */
   --radius-lg: 24px;
   --radius-full: 9999px;
-  
+
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-  --shadow-glow: 0 0 15px rgba(255, 0, 255, 0.3);
+  --shadow-sm: 0 2px 4px rgba(45, 27, 51, 0.05);
+  --shadow-md: 0 4px 8px rgba(45, 27, 51, 0.08);
+  --shadow-lg: 0 12px 24px rgba(45, 27, 51, 0.1);
+  --shadow-glow: 0 0 15px rgba(230, 137, 200, 0.4);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -45,11 +51,18 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 700;
+  /* Bold headings */
   margin: 0;
   line-height: 1.2;
+  color: var(--text-color);
 }
 
 button {
@@ -77,13 +90,19 @@ a {
 
 .btn {
   padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: var(--radius-full);
-  font-weight: 600;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: var(--radius-md);
+  /* 12px */
+  font-family: var(--font-heading);
+  /* Poppins */
+  font-weight: 700;
+  /* Bold */
+  transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--spacing-sm);
+  cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
@@ -92,12 +111,25 @@ a {
 }
 
 .btn-primary {
-  background: var(--primary-gradient);
+  background: var(--primary);
+  /* Solid #E689C8 */
   color: white;
+  /* Ensure contrast for white text on pink */
+}
+
+.btn-primary:hover {
+  background: #d470b5;
+  /* Slightly darker pink for hover */
 }
 
 .btn-secondary {
-  background: white;
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  background: var(--secondary);
+  /* Soft Mint */
+  color: var(--text-color);
+  /* Deep plum on mint */
+}
+
+.btn-secondary:hover {
+  background: #90d3da;
+  /* Slightly darker mint */
 }
